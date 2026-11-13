@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: omniroute-freeai
+    runtime: image
+    image: diegosouzapw/omniroute:latest
+    port: 20128
+    healthCheckPath: /
+    envVars:
+      - key: INITIAL_PASSWORD
+        value: sk-834298
+      - key: JWT_SECRET
+        value: 67irbul9GKqfyqMXD0QcyKvv05lms9ZJ2F2/b5ddP05DuY9QKhlF+QnzkejcDPiA
+      - key: API_KEY_SECRET
+        value: a06f3e6e41ac40dbd0da66453010b76e95abd8316b6761ec6a7d43bdcf7b855b
+      - key: PORT
+        value: "20128"
+
